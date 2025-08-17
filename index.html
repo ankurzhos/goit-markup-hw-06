@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-hw-03</title>
+    <title>goit-hw-06</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -43,11 +43,16 @@
             </li>
           </ul>
         </address>
+        <button class="burger-button" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main class="page-main">
       <!--HERO-->
-        <section class="hero-section section">
+        <section class="hero-section section hidden">
           <div class="container">
           <h1 class="hero-text">Effective Solutions for Your Business</h1>
           <button class="hero-button" type="button" data-modal-open>Order Service</button>
@@ -55,7 +60,7 @@
         </section>
       
       <!--ABOUT-->
-      <section class="about-section section">
+      <section class="about-section section hidden">
         <div class="container">
           <h2 class="visually-hidden">About Us</h2>
           <ul class="about-list">
@@ -111,7 +116,7 @@
         </div>
                 </section>
                 <!--TEAM-->
-                <section class="team-section section">
+                <section class="team-section section hidden">
           <div class="container">
             <h2 class="team-section-title">Our Team</h2>
             <ul class="team-list">
@@ -287,7 +292,7 @@
           </div>
       </section>
       <!--PORTFOLIO-->
-      <section class="portfolio-section section">
+      <section class="portfolio-section section hidden">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -386,7 +391,7 @@
       </section>
     </main>
     <!--FOOTER-->
-    <footer class="page-footer">
+    <footer class="page-footer hidden">
       <div class="container footer-container">
         <div class="footer-content">
           <a class="logo footer-logo" href="./index.html"
@@ -445,7 +450,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal-overlay" data-modal>
+    <div class="modal-overlay hidden" data-modal>
 <div class="modal">
 <button class="modal-close-button" type="button" data-modal-close>
   <svg class="modal-icon-close" width="8" height="8">
