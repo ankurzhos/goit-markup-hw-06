@@ -263,7 +263,8 @@ cursor: pointer;
  flex-direction: column;
  gap: 40px;
 }
-.mobile-nav-item a {
+.mobile-nav-item a,
+.about-title {
  font-weight: 700;
  font-size: 36px;
  line-height: 1.11;
@@ -628,3 +629,71 @@ cursor: pointer;
   url(../images/hero-desk@2x-min.png);
   }
 }
+/* ABOUT SECTION */
+
+.about-icons {
+  display: none;
+}
+.about-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 72px 24px;
+}
+.about-title {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.about-text {
+  font-weight: 500;
+}
+.about-text,
+.team-text,
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* ABOUT TAB */
+
+ @media screen and (min-width: 768px) {
+ .about-item {
+  width: calc((100% - 24px) / 2);
+}
+.about-title {
+  text-align: left;
+}
+ }
+
+ /* ABOUT DESK */
+
+ @media screen and (min-width: 1158px) {
+  .about-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4fd;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  margin-bottom: 8px;
+  }
+  .about-item,
+  .team-item {
+  width: calc((100% - 72px) / 4);
+}
+.about-title,
+.team-name,
+.portfolio-products {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+ }
+
+ /* TEAM SECTION */
+
+ 
