@@ -278,7 +278,9 @@ cursor: pointer;
 .mobile-nav-link:hover,
 .mobile-nav-link:focus,
 .mobile-contacts-link:hover,
-.mobile-contacts-link:focus {
+.mobile-contacts-link:focus,
+.mobile-contacts-link.current,
+.mobile-nav-link.current {
   color: #404bbf;
 }
 
@@ -689,6 +691,9 @@ cursor: pointer;
   .team-item {
   width: calc((100% - 72px) / 4);
 }
+.about-text {
+  font-weight: 400;
+}
 .about-title,
 .team-name,
 .portfolio-products {
@@ -976,6 +981,7 @@ opacity: 0.6;
 }
 .footer-content {
   margin-right: 120px;
+  margin-bottom: 0;
 }
 .footer-form-input {
   opacity: 1;
@@ -985,9 +991,10 @@ opacity: 0.6;
 }
  .footer-social-media {
   margin-right: 80px;
+  margin-bottom: 0;
 } 
 .footer-container {
   align-items: baseline; 
-  padding: 0;
+  padding: 0 15px;
 }
 }
